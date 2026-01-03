@@ -91,9 +91,19 @@ body {
   border-radius: 6px;
   transition: background 0.2s;
 }
+.week-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #6b6bbf;
+  color: white;
+  border: none;
+}
 
 .week-btn:hover {
   background: #e0e0e0;
+}
+button {
+  font-family: inherit;
 }
 
 .week-btn:disabled {
