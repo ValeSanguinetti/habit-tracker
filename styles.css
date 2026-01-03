@@ -179,3 +179,41 @@ body {
   }
 }
 
+
+@media (max-width: 600px) {
+
+  .week-wrapper {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .week-btn {
+    justify-self: center;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .week-days {
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .day {
+    padding: 4px 0;
+    white-space: nowrap;
+  }
+
+  .habit-days {
+    gap: 6px;
+  }
+
+  .check {
+    height: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .day {
+    font-size: 11px;
+  }
+}
