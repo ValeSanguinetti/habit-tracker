@@ -1,0 +1,181 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f2f3f8;
+  color: #333;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*HEADER*/
+.app-header {
+  background-color: #6b6bbf;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.app-header h1 {
+  color: white;
+  font-size: 28px;
+}
+
+/*INPUT + BOTON*/
+
+.habit-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.habit-input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.habit-button {
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.habit-button:hover {
+  background-color: #43a047;
+}
+.week-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+/* DIAS DE LA SEMANA */
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+}
+
+.day {
+  padding: 8px 0;
+}
+
+.week-btn {
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.week-btn:hover {
+  background: #e0e0e0;
+}
+
+.week-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/*LISTA HABITOS*/
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TARJETA DE HABITOS*/
+.habit-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* HEADER DEL HABITO*/ 
+.habit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.habit-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.habit-streak {
+  font-size: 14px;
+  color: #555;
+}
+
+/*CHECKS DIARIOS*/
+.habit-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.check {
+  height: 32px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+
+.check.done {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+/*FOOTER RESUMEN*/
+.summary {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+  .habit-form {
+    flex-direction: column;
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+

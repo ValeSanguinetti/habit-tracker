@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker de hábitos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+        <h1>Tracker de Hábitos</h1>
+        </header>
+
+        <section class="habit-form">
+        <input 
+             type="text" 
+            placeholder="Nuevo hábito..." 
+             class="habit-input"
+        />
+        <button class="habit-button">Añadir Hábito</button>
+        </section>
+        <div class="week-wrapper">
+  <button id="prevWeek" class="week-btn">⏮️</button>
+
+  <section class="week-days">
+    <!-- se renderizan los días dinámicamente -->
+  </section>
+
+  <button id="nextWeek" class="week-btn">⏭️</button>
+</div>
+        <section class="habits-list"></section>
+
+        <footer class="summary">
+  <p>Días cumplidos: <strong class="completed-summary">0 / 0</strong></p>
+  <p>Días perfectos: <strong class="perfect-days">0</strong></p>
+  <p>Mejor racha: <strong class="best-streak">0 días</strong></p>
+<p>Hábito destacado: <strong class="top-habit">—</strong></p>
+
+</footer>
+
+
+    
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
